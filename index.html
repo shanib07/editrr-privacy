@@ -1,43 +1,295 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Editrr Privacy Policy</title>
 <style>
-body{
-max-width:800px;
-margin:40px auto;
-padding:20px;
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-line-height:1.6;
+:root {
+    --bg: #000000;
+    --card: #111111;
+    --text: #ffffff;
+    --secondary: #a1a1aa;
+    --border: #222222;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+                 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+header {
+    margin-bottom: 80px;
+}
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: clamp(42px, 8vw, 72px);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 24px;
+}
+.effective {
+    color: var(--secondary);
+    font-size: 16px;
+}
+section {
+    margin-bottom: 56px;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+    letter-spacing: -0.03em;
+}
+p {
+    margin-bottom: 16px;
+    color: #e5e5e5;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+    color: #e5e5e5;
+}
+.summary {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px;
+}
+footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    color: var(--secondary);
+}
+a {
+    color: white;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 48px 20px;
+    }
+    h2 {
+        font-size: 24px;
+    }
 }
 </style>
 </head>
 <body>
-
-<h1>Privacy Policy for Editrr</h1>
-
-<p>Effective Date: June 2026</p>
-
-<p>Editrr respects your privacy. This Privacy Policy explains how Editrr handles information when you use the app.</p>
-
-<h2>Information Processing</h2>
-<p>Editrr processes videos, audio, and lyrics primarily on your device. Your media files are not uploaded to Editrr servers.</p>
-
-<h2>Media Access</h2>
-<p>Editrr requests access to your Photos library so that you can import videos and save exported videos.</p>
-
-<h2>Lyrics Generation</h2>
-<p>Lyrics generation is performed locally on your device using downloaded AI models.</p>
-
-<h2>Analytics and Diagnostics</h2>
-<p>Editrr uses Firebase Crashlytics to collect anonymous crash reports and diagnostic information.</p>
-
-<h2>Data Sharing</h2>
-<p>Editrr does not sell personal information and does not share your media files with third parties.</p>
-
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
-
+<div class="container">
+<header>
+    <div class="logo">Editrr</div>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective Date: June 2026</p>
+</header>
+<section>
+    <h2>Introduction</h2>
+    <p>
+        Editrr respects your privacy and is committed to protecting your information.
+        This Privacy Policy explains how Editrr collects, uses, stores, and protects
+        information when you use the application.
+    </p>
+</section>
+<section>
+    <h2>About Editrr</h2>
+    <p>
+        Editrr is an AI-powered video editing application that helps users create
+        beat-synced short-form videos, generate lyric overlays, customize edits,
+        preview content, and export finished videos.
+    </p>
+</section>
+<section>
+    <h2>Information We Collect</h2>
+    <p>Editrr may access media that you choose to provide:</p>
+    <ul>
+        <li>Videos from your Photos library</li>
+        <li>Audio files</li>
+        <li>Music tracks</li>
+        <li>Generated editing content</li>
+    </ul>
+    <p>
+        This media is used solely to provide editing functionality within the app.
+    </p>
+</section>
+<section>
+    <h2>Local Processing</h2>
+    <p>
+        Editrr is designed with a local-first architecture.
+    </p>
+    <p>
+        The following operations are performed primarily on your device:
+    </p>
+    <ul>
+        <li>Beat detection</li>
+        <li>Audio analysis</li>
+        <li>Timeline generation</li>
+        <li>Preview generation</li>
+        <li>Video export</li>
+        <li>Lyrics generation</li>
+        <li>Video customization</li>
+    </ul>
+    <p>
+        Your videos and audio files are not uploaded to Editrr-operated servers for processing.
+    </p>
+</section>
+<section>
+    <h2>AI Models</h2>
+    <p>
+        Some features, including lyrics generation, may require downloading AI models
+        to your device.
+    </p>
+    <ul>
+        <li>Downloaded directly to your device</li>
+        <li>Stored locally</li>
+        <li>Reused for future generations</li>
+        <li>Not shared with other users</li>
+    </ul>
+</section>
+<section>
+    <h2>Photos Library Access</h2>
+    <p>
+        Editrr requests access to your Photos library so that you can:
+    </p>
+    <ul>
+        <li>Import videos</li>
+        <li>Select media for editing</li>
+        <li>Save exported videos</li>
+    </ul>
+    <p>
+        Access can be revoked at any time through iOS Settings.
+    </p>
+</section>
+<section>
+    <h2>Storage and Temporary Files</h2>
+    <p>
+        Editrr may temporarily create local working files during:
+    </p>
+    <ul>
+        <li>Video import</li>
+        <li>Audio extraction</li>
+        <li>Preview generation</li>
+        <li>Video export</li>
+        <li>Lyrics generation</li>
+    </ul>
+    <p>
+        Temporary files are automatically cleaned up when no longer required.
+    </p>
+</section>
+<section>
+    <h2>Analytics and Diagnostics</h2>
+    <p>
+        Editrr uses Firebase Crashlytics to collect anonymous crash reports and
+        diagnostic information to improve application stability and performance.
+    </p>
+    <p>
+        Information may include:
+    </p>
+    <ul>
+        <li>Device model</li>
+        <li>Operating system version</li>
+        <li>Application version</li>
+        <li>Crash logs</li>
+        <li>Diagnostic information</li>
+    </ul>
+    <p>
+        Crash reports do not intentionally contain your videos, audio files,
+        lyrics, or exported content.
+    </p>
+</section>
+<section>
+    <h2>Data Sharing</h2>
+    <p>
+        Editrr does not sell personal information.
+    </p>
+    <p>
+        Editrr does not share your videos, audio files, or exported content with
+        advertisers or data brokers.
+    </p>
+</section>
+<section>
+    <h2>Third-Party Services</h2>
+    <p>
+        Editrr may use the following third-party services:
+    </p>
+    <ul>
+        <li>Firebase Crashlytics</li>
+        <li>Apple system frameworks and services</li>
+    </ul>
+    <p>
+        These services are governed by their own privacy policies.
+    </p>
+</section>
+<section>
+    <h2>Children's Privacy</h2>
+    <p>
+        Editrr is not directed toward children under the age of 13 and does not
+        knowingly collect personal information from children.
+    </p>
+</section>
+<section>
+    <h2>Security</h2>
+    <p>
+        Editrr relies on security mechanisms provided by Apple platforms and trusted
+        third-party providers to help protect information.
+    </p>
+</section>
+<section>
+    <h2>Your Rights</h2>
+    <p>
+        Depending on your jurisdiction, you may have rights regarding your information,
+        including access, correction, deletion, and restriction of processing.
+    </p>
+    <p>
+        Because Editrr primarily processes media locally on your device, you retain
+        direct control over most of your information.
+    </p>
+</section>
+<section>
+    <h2>Changes to This Policy</h2>
+    <p>
+        This Privacy Policy may be updated from time to time.
+        Updates will be published on this page with an updated effective date.
+    </p>
+</section>
+<section>
+    <h2>Contact</h2>
+    <p>
+        Mohammed Shanib<br>
+        Email: YOUR_EMAIL_HERE
+    </p>
+</section>
+<section class="summary">
+    <h2>Privacy Summary</h2>
+    <ul>
+        <li>Media processing occurs primarily on-device.</li>
+        <li>Your videos and audio are not uploaded to Editrr servers.</li>
+        <li>Lyrics generation uses locally installed AI models.</li>
+        <li>Firebase Crashlytics is used for anonymous crash reporting.</li>
+        <li>Temporary files are automatically cleaned up.</li>
+        <li>Users remain in control of their media.</li>
+    </ul>
+</section>
+<footer>
+    © 2026 Editrr. All rights reserved.
+</footer>
+</div>
 </body>
 </html>
